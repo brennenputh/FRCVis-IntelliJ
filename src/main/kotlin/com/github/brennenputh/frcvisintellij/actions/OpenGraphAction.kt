@@ -1,14 +1,11 @@
 package com.github.brennenputh.frcvisintellij.actions
 
-import com.google.api.Logging
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.ui.Messages
 import com.intellij.psi.*
-import com.intellij.psi.search.GlobalSearchScope
 import com.intellij.psi.util.PsiTreeUtil
-import org.intellij.plugins.relaxNG.compact.psi.util.PsiFunction
 
 
 class OpenGraphAction : AnAction() {
