@@ -6,7 +6,8 @@ import com.intellij.openapi.project.Project
 import com.github.brennenputh.frcvisintellij.MyBundle
 
 @Service(Service.Level.PROJECT)
-class MyProjectService(project: Project) {
+class GraphProviderService(project: Project) {
+    val ready = false
 
     init {
         thisLogger().info(MyBundle.message("projectService", project.name))
@@ -14,4 +15,7 @@ class MyProjectService(project: Project) {
     }
 
     fun getRandomNumber() = (1..100).random()
+
+    fun getPSIFile() {
+    }
 }

@@ -5,6 +5,7 @@
     <vendor>brennenputh</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
@@ -13,6 +14,12 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.brennenputh.frcvisintellij.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.brennenputh.frcvisintellij.actions.OpenGraphAction"
+            class="com.github.brennenputh.frcvisintellij.actions.OpenGraphAction" text="Open Command Graph"
+            description="Graph Testing">
+            <add-to-group group-id="FileMenu" anchor="first" />
+        </action>
+    </actions>
 </idea-plugin>
